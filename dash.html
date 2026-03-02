@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stackly Medical Devices | Dashboard</title>
+    <meta name="description" content="Dashboard view for your Stackly medical device account with basic stats and recent contact messages." />
+    <link rel="stylesheet" href="dash.css" />
+  </head>
+  <body>
+
+    <header class="topbar">
+      <div class="container">
+        <nav class="nav" aria-label="Primary">
+           <a class="brand" href="index.html">
+              <img src="assets/stack logo.png" alt="Company Logo" class="logo">
+           
+          </a>
+
+          <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="menu">
+            Menu
+          </button>
+
+          <div id="menu" class="menu" data-open="false">
+            <div id="homeDropdown" class="dropdown" data-open="false">
+              <a href="index.html" data-navlink="true">Home</a>
+              <button id="homeDropdownBtn" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="caret" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="Home menu">
+                <a role="menuitem" href="home.html" data-navlink="true">Home2</a>
+              </div>
+            </div>
+
+            <a href="products.html" data-navlink="true">Products</a>
+            <a href="services.html" data-navlink="true">Services</a>
+            <a href="about.html" data-navlink="true">About</a>
+            <a href="dash.html" data-navlink="true">Dashboard</a>
+            <a href="contact.html" data-navlink="true">Contact</a>
+            <a href="login.html" class="auth-link" data-navlink="true">Login</a>
+            <a href="signup.html" class="auth-link" data-navlink="true">Sign up</a>
+          </div>
+
+ <div class="nav-actions">
+            <a class="btn btn-ghost" href="login.html">Login</a>
+            <a class="btn btn-primary" href="signup.html">Sign up</a>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+
+<div class="dashboard-content">
+  <div class="sidebar">
+    <h2>Navigation</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <a href="404.html">
+      <li>Devices</li>
+      <li>Analytics</li>
+      <li>Reports</li>
+      <li>Settings</li>
+      </a>
+    </ul>
+  </div>
+
+  <div class="main">
+
+  <div class="header">
+    <h1>Medical Device Analytics</h1>
+    <a href="404.html">
+    <div class="profile">Admin</div>
+    </a>
+  </div>
+
+  <!-- KPI CARDS -->
+  <div class="cards">
+    <div class="card">
+      <h3>Total Devices</h3>
+      <p id="devices">0</p>
+    </div>
+    <div class="card">
+      <h3>Active Units</h3>
+      <p id="active">0</p>
+    </div>
+    <div class="card">
+      <h3>Monthly Revenue</h3>
+      <p id="revenue">₹0</p>
+    </div>
+    <div class="card">
+      <h3>Pending Service</h3>
+      <p id="service">0</p>
+    </div>
+  </div>
+
+  <!-- CHARTS -->
+  <div class="charts">
+    <div class="chart-box">
+      <canvas id="lineChart"></canvas>
+    </div>
+    <div class="chart-box">
+      <canvas id="barChart"></canvas>
+    </div>
+    <div class="chart-box">
+      <canvas id="donutChart"></canvas>
+    </div>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-container">
+    <h3>Recent Device Activity</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Device ID</th>
+          <th>Type</th>
+          <th>Status</th>
+          <th>Last Check</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MD-1023</td>
+          <td>ECG Monitor</td>
+          <td class="active-status">Active</td>
+          <td>25 Feb 2026</td>
+        </tr>
+        <tr>
+          <td>MD-1045</td>
+          <td>Ventilator</td>
+          <td class="service-status">Service</td>
+          <td>24 Feb 2026</td>
+        </tr>
+        <tr>
+          <td>MD-1088</td>
+          <td>Infusion Pump</td>
+          <td class="inactive-status">Inactive</td>
+          <td>22 Feb 2026</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  </div> <!-- end .main -->
+</div> <!-- end .dashboard-content -->
+
+<footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                     <a href="index.html" class="logo">
+                    <img src="assets/images/stack logo.png" alt="Website Logo">
+                </a>
+                    <p>Medical devices for monitoring, diagnostics, and care delivery. Built with safety, usability, and support in mind.</p>
+                    <div class="social-links">
+                        <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="404.html"><i class="fab fa-twitter"></i></a>
+                        <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="404.html"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="404.html">VitalView Monitor</a></li>
+                        <li><a href="404.html">LabSense Analyzer</a></li>
+                        <li><a href="404.html">InfuseCare Pump</a></li>
+                        <li><a href="404.html">NeoWatch Monitor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 salem ,tamilnadu</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-envelope"></i> info@stackly.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Medical Devices. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/dashboard.js"></script>
+   
+  </body>
+</html>
+

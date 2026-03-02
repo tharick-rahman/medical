@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stackly Medical Devices | Home2</title>
+    <meta name="description" content="Alternative home layout for Stackly medical devices with animated sections and testimonials." />
+    <link rel="stylesheet" href="home1.css" />
+  </head>
+  <body>
+      <!-- ===== STACKLY MEDICAL LOADER ===== -->
+<div id="loader">
+  <div class="loader-wrapper">
+
+    <div class="medical-cross">
+      <div class="cross-vertical"></div>
+      <div class="cross-horizontal"></div>
+    </div>
+
+    <svg class="ecg" viewBox="0 0 200 50">
+      <polyline 
+        fill="none" 
+        stroke="#00f5d4" 
+        stroke-width="3"
+        points="0,25 20,25 30,10 40,40 50,25 70,25 80,15 90,35 100,25 200,25"/>
+    </svg>
+
+    <h1 class="brand">
+      Stackly <span>Medical Device</span>
+    </h1>
+
+    <div class="loading-text">Initializing System...</div>
+
+  </div>
+</div>
+    <header class="topbar">
+      <div class="container">
+        <nav class="nav" aria-label="Primary">
+                   <a class="brand" href="index.html">
+              <img src="assets/stack logo.png" alt="Company Logo" class="logo">
+           
+          </a>
+
+          <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="menu">
+            Menu
+          </button>
+
+          <div id="menu" class="menu" data-open="false">
+            <div id="homeDropdown" class="dropdown" data-open="false">
+              <a href="index.html" data-navlink="true">Home</a>
+              <button id="homeDropdownBtn" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="caret" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="Home menu">
+                <a role="menuitem" href="home.html" data-navlink="true">Home2</a>
+              </div>
+            </div>
+
+            <a href="products.html" data-navlink="true">Products</a>
+            <a href="services.html" data-navlink="true">Services</a>
+            <a href="about.html" data-navlink="true">About</a>
+            <a href="dash.html" data-navlink="true">Dashboard</a>
+            <a href="contact.html" data-navlink="true">Contact</a>
+            <a href="login.html" class="auth-link" data-navlink="true">Login</a>
+            <a href="signup.html" class="auth-link" data-navlink="true">Sign up</a>
+          </div>
+
+          <div class="nav-actions">
+            <a class="btn btn-ghost" href="login.html">Login</a>
+            <a class="btn btn-primary" href="signup.html">Sign up</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero alt-hero">
+        <div class="container">
+          <div class="hero-inner">
+            <div class="reveal">
+              <div class="kicker">
+                <span class="dot" aria-hidden="true"></span>
+                <span>Reliable devices, better patient flow</span>
+              </div>
+              <h1 class="h1">Modern medical devices designed for speed and safety.</h1>
+              <p class="lead">
+                Stackly provides device ecosystems that are easy to deploy, simple to train, and ready for clinical environments—from wards
+                to labs and home care.
+              </p>
+              <div class="pill-row">
+                <span class="pill">On-site installation</span>
+                <span class="pill">Calibration kits</span>
+                <span class="pill">Warranty + AMC plans</span>
+                <span class="pill">Training for staff</span>
+              </div>
+              <div class="hero-cta">
+                <a class="btn btn-primary" href="contact.html">Book a Demo</a>
+                <a class="btn" href="products.html">Browse Devices</a>
+              </div>
+            </div>
+
+            <div class="hero-card reveal">
+              <div class="hero-img hoverlift">
+                <img src="assets/home2.jpg" alt="Alternate hero medical device image placeholder" />
+              </div>
+              <div class="chips">
+                <span class="chip">Innovating the Future of Healthcare</span>
+                <span class="chip">Precision Medical Solutions</span>
+                <span class="chip">Trusted Healthcare Innovation</span>
+                <span class="chip">Precision. Innovation. Care.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <h2 class="reveal" style="margin:0 0 14px; letter-spacing:-0.02em">What you get with Stackly</h2>
+          <div class="grid value-grid">
+            <article class="card hoverlift reveal">
+              <div class="icon" aria-hidden="true"><i></i></div>
+              <h3>Deployment-ready</h3>
+              <p>Fast setup with checklists, training plans, and clear handover.</p>
+            </article>
+            <article class="card hoverlift reveal">
+              <div class="icon" aria-hidden="true"><i></i></div>
+              <h3>Stable operations</h3>
+              <p>Predictable maintenance schedules and spare parts planning.</p>
+            </article>
+            <article class="card hoverlift reveal">
+              <div class="icon" aria-hidden="true"><i></i></div>
+              <h3>Compliance-friendly</h3>
+              <p>Clear device documentation and specification summaries.</p>
+            </article>
+            <article class="card hoverlift reveal">
+              <div class="icon" aria-hidden="true"><i></i></div>
+              <h3>Team support</h3>
+              <p>Helpdesk, on-site visits, and escalation when needed.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="testimonials">
+            <div class="quote reveal">
+              <h2 style="margin:0 0 8px; letter-spacing:-0.02em">Teams trust Stackly</h2>
+              <p id="quoteText">Loading…</p>
+              <div class="who">
+                <img id="quoteImg" src="assets/person1.jfif" alt="Testimonial avatar placeholder" />
+                <div>
+                  <strong id="quoteName">—</strong>
+                  <span id="quoteRole">—</span>
+                </div>
+              </div>
+              <div class="quote-controls">
+                <button id="quotePrev" class="btn" type="button">Previous</button>
+                <button id="quoteNext" class="btn btn-primary" type="button">Next</button>
+              </div>
+            </div>
+
+            <div class="mini-gallery reveal">
+              <div class="media hoverlift">
+                <img src="assets/home 2.jpg" alt="Device gallery placeholder 1" />
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="split">
+            <div class="reveal">
+              <h2 style="margin:0 0 10px; letter-spacing:-0.02em">Built-in functionality</h2>
+              <p class="muted" style="margin:0 0 14px">
+                Every Stackly device comes with essential features designed to support real clinical workflows.
+              </p>
+              <div class="grid feature-grid">
+                <article class="card hoverlift reveal">
+                  <div class="icon" aria-hidden="true"><i></i></div>
+                  <h3>Real-time alerts</h3>
+                  <p>Configurable thresholds and priority-based notifications for team awareness.</p>
+                </article>
+                <article class="card hoverlift reveal">
+                  <div class="icon" aria-hidden="true"><i></i></div>
+                  <h3>Data export</h3>
+                  <p>Built-in formats for EHR integration, audits, and compliance reporting.</p>
+                </article>
+                <article class="card hoverlift reveal">
+                  <div class="icon" aria-hidden="true"><i></i></div>
+                  <h3>Offline mode</h3>
+                  <p>Seamless operation without network, with auto-sync when reconnected.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="media reveal hoverlift">
+              <img src="assets/diagnosis.jpg" alt="Device functionality image placeholder" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="reveal" style="margin:0 0 10px; letter-spacing:-0.02em">Stackly device families</h2>
+          <p class="muted reveal" style="margin:0 0 14px">
+            You can mix and match devices from different families depending on how your hospital, clinic, or lab is set up.
+          </p>
+          <div class="grid value-grid">
+            <article class="card hoverlift reveal">
+              <div class="icon" aria-hidden="true"><i></i></div>
+              <h3>Monitoring</h3>
+              <p>
+                Bedside and transport monitors that help teams watch vital signs clearly in ICUs, wards, and procedure rooms.
+              </p>
+            </article>
+            <article class="card hoverlift reveal">
+              <div class="icon" aria-hidden="true"><i></i></div>
+              <h3>Diagnostics</h3>
+              <p>
+                Devices that support lab workflows with guided prompts, QC reminders, and easy export of results.
+              </p>
+            </article>
+            <article class="card hoverlift reveal">
+              <div class="icon" aria-hidden="true"><i></i></div>
+              <h3>Therapy & infusion</h3>
+              <p>
+                Infusion and treatment devices that focus on accuracy, logs, and easy-to-read screens for teams and patients.
+              </p>
+            </article>
+            <article class="card hoverlift reveal">
+              <div class="icon" aria-hidden="true"><i></i></div>
+              <h3>Home care</h3>
+              <p>
+                Simple kits for monitoring at home with instructions and layouts designed for families, not just clinicians.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <h2 class="reveal" style="margin:0 0 10px; letter-spacing:-0.02em">FAQ for new Stackly sites</h2>
+          <div class="grid value-grid">
+            <article class="card hoverlift reveal">
+              <h3>How long does a deployment take?</h3>
+              <p>
+                Timelines depend on how many locations you have, but even smaller multi-department setups can usually be installed and
+                trained within a few weeks.
+              </p>
+            </article>
+            <article class="card hoverlift reveal">
+              <h3>Can we pilot devices first?</h3>
+              <p>
+                Yes. Many customers start with a pilot unit or a single ward so they can see how the workflow feels before expanding.
+              </p>
+            </article>
+            <article class="card hoverlift reveal">
+              <h3>How do we track issues?</h3>
+              <p>
+                In a real deployment, your dashboard would surface open tickets, status of replacements, and completed service visits for
+                your devices.
+              </p>
+            </article>
+            <article class="card hoverlift reveal">
+              <h3>What about training?</h3>
+              <p>
+                Training can be planned for different staff groups—nurses, doctors, technicians—so each team knows how to use and care for
+                the devices.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+   <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                     <a href="index.html" class="logo">
+                    <img src="assets/stack logo.png" alt="Website Logo">
+                </a>
+                    <p>Medical devices for monitoring, diagnostics, and care delivery. Built with safety, usability, and support in mind.</p>
+                    <div class="social-links">
+                        <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="404.html"><i class="fab fa-twitter"></i></a>
+                        <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="404.html"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="404.html">VitalView Monitor</a></li>
+                        <li><a href="404.html">LabSense Analyzer</a></li>
+                        <li><a href="404.html">InfuseCare Pump</a></li>
+                        <li><a href="404.html">NeoWatch Monitor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 salem ,tamilnadu</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-envelope"></i> info@stackly.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Medical Devices. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/home2.js"></script>
+  </body>
+</html>
+

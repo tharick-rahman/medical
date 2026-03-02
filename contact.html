@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stackly Medical Devices | Contact</title>
+    <meta name="description" content="Contact Stackly for medical device demos, pricing, service plans, and technical questions." />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <nav class="nav" aria-label="Primary">
+                     <a class="brand" href="index.html">
+              <img src="assets/stack logo.png" alt="Company Logo" class="logo">
+           
+          </a>
+
+          <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="menu">
+            Menu
+          </button>
+
+          <div id="menu" class="menu" data-open="false">
+            <div id="homeDropdown" class="dropdown" data-open="false">
+              <a href="index.html" data-navlink="true">Home</a>
+              <button id="homeDropdownBtn" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="caret" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="Home menu">
+                <a role="menuitem" href="home.html" data-navlink="true">Home2</a>
+              </div>
+            </div>
+
+            <a href="products.html" data-navlink="true">Products</a>
+            <a href="services.html" data-navlink="true">Services</a>
+            <a href="about.html" data-navlink="true">About</a>
+            <a href="dash.html" data-navlink="true">Dashboard</a>
+            <a href="contact.html" data-navlink="true">Contact</a>
+            <a href="login.html" class="auth-link" data-navlink="true">Login</a>
+            <a href="signup.html" class="auth-link" data-navlink="true">Sign up</a>
+          </div>
+
+          <div class="nav-actions">
+            <a class="btn btn-ghost" href="login.html">Login</a>
+            <a class="btn btn-primary" href="signup.html">Sign up</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero contact-hero">
+        <div class="container">
+          <div class="contact-layout">
+            <div class="reveal">
+              <div class="kicker">
+                <span class="dot" aria-hidden="true"></span>
+                <span>Contact Stackly</span>
+              </div>
+              <h1 class="h1">Tell us about your medical device requirement.</h1>
+              <p class="lead">
+                Share how you plan to use Stackly devices—in hospitals, labs, or home care—and we’ll help you choose the right setup.
+              </p>
+
+              <form id="contactForm" class="form" novalidate>
+                <div id="contactNameField" class="field">
+                  <label class="label" for="contactName">Name</label>
+                  <input id="contactName" class="input" type="text" placeholder="Your full name" />
+                  <div class="error"></div>
+                </div>
+                <div id="contactEmailField" class="field">
+                  <label class="label" for="contactEmail">Email</label>
+                  <input id="contactEmail" class="input" type="email" placeholder="you@example.com" />
+                  <div class="error"></div>
+                </div>
+                <div class="field">
+                  <label class="label" for="contactOrg">Organization</label>
+                  <input id="contactOrg" class="input" type="text" placeholder="Hospital / clinic / lab / company" />
+                  <div class="hint">Optional, but helps us route your message.</div>
+                </div>
+                <div id="contactMessageField" class="field">
+                  <label class="label" for="contactMessage">How can we help?</label>
+                  <textarea id="contactMessage" class="textarea" placeholder="Tell us about your use-case or questions."></textarea>
+                  <div class="error"></div>
+                </div>
+                <button class="btn btn-primary" type="submit">Send message</button>
+              </form>
+            </div>
+
+            <aside class="contact-card reveal">
+              <h2 style="margin:0 0 8px; letter-spacing:-0.02em">Other ways to reach us</h2>
+              <p class="muted" style="margin:0 0 10px">
+                Use the form or reach out directly. We’ll usually respond within one working day.
+              </p>
+              <div class="contact-meta">
+                <div class="contact-meta-row">
+                  <div class="contact-meta-label">Email</div>
+                  <div>support@stackly.com</div>
+                </div>
+                <div class="contact-meta-row">
+                  <div class="contact-meta-label">Phone</div>
+                  <div>+91 9876543210</div>
+                </div>
+                <div class="contact-meta-row">
+                  <div class="contact-meta-label">Hours</div>
+                  <div>24/7 for critical device issues, business hours for routine queries.</div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="reveal" style="margin:0 0 10px; letter-spacing:-0.02em">What to include in your request</h2>
+          <p class="muted reveal" style="margin:0 0 12px">
+            A few extra details in your message help us respond with the most useful information on devices and services.
+          </p>
+          <div class="grid feature-grid">
+            <article class="card hoverlift reveal">
+              <div class="icon" aria-hidden="true"><i></i></div>
+              <h3>Your environment</h3>
+              <p>Share whether you are a hospital, clinic, diagnostics lab, or home-care provider and how many locations you have.</p>
+            </article>
+            <article class="card hoverlift reveal">
+              <div class="icon" aria-hidden="true"><i></i></div>
+              <h3>Device use-cases</h3>
+              <p>Describe which departments or programs will use the devices and what type of patients they usually see.</p>
+            </article>
+            <article class="card hoverlift reveal">
+              <div class="icon" aria-hidden="true"><i></i></div>
+              <h3>Timeframe</h3>
+              <p>Let us know if you are just exploring options, planning a rollout, or replacing existing devices soon.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                     <a href="index.html" class="logo">
+                    <img src="assets/stack logo.png" alt="Website Logo">
+                </a>
+                    <p>Medical devices for monitoring, diagnostics, and care delivery. Built with safety, usability, and support in mind.</p>
+                    <div class="social-links">
+                        <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="404.html"><i class="fab fa-twitter"></i></a>
+                        <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="404.html"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="404.html">VitalView Monitor</a></li>
+                        <li><a href="404.html">LabSense Analyzer</a></li>
+                        <li><a href="404.html">InfuseCare Pump</a></li>
+                        <li><a href="404.html">NeoWatch Monitor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 salem ,tamilnadu</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-envelope"></i> info@stackly.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Medical Devices. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
+

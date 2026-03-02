@@ -1,0 +1,210 @@
+@import url("style.css");
+
+.stats{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 18px;
+}
+.stat{
+  background: rgba(255,255,255,0.78);
+  border: 1px solid rgba(215,230,247,0.9);
+  border-radius: 18px;
+  padding: 14px 14px;
+  box-shadow: var(--shadow2);
+}
+.stat .num{
+  font-size: 1.55rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+.stat .lbl{color: var(--muted); font-size: 0.95rem}
+
+.logos{
+  display:flex;
+  gap: 14px;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  opacity:0.9;
+}
+.logo-pill{
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(215,230,247,0.9);
+  color: var(--muted);
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}
+.logo-pill img{width: 28px; height: 28px}
+
+.feature-grid{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cta-band{
+  border-radius: 28px;
+  padding: 18px;
+  border: 1px solid rgba(215,230,247,0.9);
+  background:
+    radial-gradient(700px 260px at 10% 0%, rgba(43,119,255,0.18), transparent 55%),
+    radial-gradient(700px 260px at 90% 100%, rgba(16,185,129,0.16), transparent 55%),
+    rgba(255,255,255,0.78);
+  box-shadow: var(--shadow);
+  display:grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 16px;
+  align-items:center;
+}
+.cta-band h2{margin:0 0 8px; letter-spacing:-0.02em}
+.cta-band p{margin:0; color: var(--muted)}
+.cta-actions{display:flex; gap:10px; justify-content:flex-end; flex-wrap:wrap}
+
+@media (max-width: 980px){
+  .feature-grid{grid-template-columns: 1fr 1fr}
+  .stats{grid-template-columns: 1fr 1fr}
+  .cta-band{grid-template-columns: 1fr}
+  .cta-actions{justify-content:flex-start}
+}
+@media (max-width: 560px){
+  .feature-grid{grid-template-columns: 1fr}
+  .stats{grid-template-columns: 1fr}
+  .logos{justify-content:flex-start}
+}
+
+/* ===== PREMIUM MEDICAL LOADER ===== */
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.loader-wrapper {
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* ===== ROTATING MEDICAL CROSS ===== */
+
+.medical-cross {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 30px;
+  animation: rotateCross 3s linear infinite;
+}
+
+.cross-vertical,
+.cross-horizontal {
+  position: absolute;
+  background: #00f5d4;
+  border-radius: 6px;
+  box-shadow: 0 0 20px #00f5d4;
+}
+
+.cross-vertical {
+  width: 20px;
+  height: 80px;
+  left: 30px;
+}
+
+.cross-horizontal {
+  height: 20px;
+  width: 80px;
+  top: 30px;
+}
+
+@keyframes rotateCross {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ===== ECG ANIMATION ===== */
+
+.ecg {
+  width: 220px;
+  margin: 20px auto;
+  animation: ecgMove 1.2s linear infinite;
+}
+
+@keyframes ecgMove {
+  from { transform: translateX(-20px); }
+  to { transform: translateX(20px); }
+}
+
+/* ===== BRAND ANIMATION ===== */
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.brand span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #00f5d4;
+  margin-top: 5px;
+}
+
+.loading-text {
+  margin-top: 15px;
+  font-size: 13px;
+  opacity: 0.7;
+  animation: blink 1.5s infinite;
+}
+
+/* Glow background pulse */
+
+#loader::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #00f5d4;
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: glowPulse 2s infinite;
+}
+
+@keyframes glowPulse {
+  0% { transform: scale(0.8); opacity: 0.1; }
+  50% { transform: scale(1.2); opacity: 0.2; }
+  100% { transform: scale(0.8); opacity: 0.1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%,100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+/* Hide loader smoothly */
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s;
+}

@@ -1,0 +1,42 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder image">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8F3FF"/>
+      <stop offset="1" stop-color="#F2FBFF"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#2B77FF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0.10"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#0b2a4a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <g opacity="0.95">
+    <circle cx="260" cy="220" r="180" fill="url(#a)"/>
+    <circle cx="1380" cy="170" r="220" fill="url(#a)"/>
+    <circle cx="1320" cy="760" r="240" fill="url(#a)"/>
+    <circle cx="220" cy="760" r="240" fill="url(#a)"/>
+  </g>
+
+  <g filter="url(#s)">
+    <rect x="220" y="190" width="1160" height="520" rx="28" fill="#FFFFFF" stroke="#D9E8FF" stroke-width="2"/>
+    <rect x="270" y="250" width="440" height="36" rx="18" fill="#EEF6FF"/>
+    <rect x="270" y="310" width="720" height="22" rx="11" fill="#F3FAFF"/>
+    <rect x="270" y="346" width="680" height="22" rx="11" fill="#F3FAFF"/>
+    <rect x="270" y="382" width="620" height="22" rx="11" fill="#F3FAFF"/>
+    <rect x="270" y="452" width="220" height="56" rx="16" fill="#2B77FF" opacity="0.18"/>
+    <rect x="520" y="452" width="220" height="56" rx="16" fill="#10B981" opacity="0.16"/>
+
+    <rect x="840" y="250" width="490" height="360" rx="24" fill="#F6FBFF" stroke="#E2F0FF" stroke-width="2"/>
+    <path d="M880 560 L980 450 L1070 520 L1140 470 L1280 610 L880 610 Z" fill="#2B77FF" opacity="0.10"/>
+    <circle cx="1228" cy="330" r="44" fill="#10B981" opacity="0.14"/>
+  </g>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial" fill="#0B2A4A">
+    <text x="800" y="760" text-anchor="middle" font-size="34" font-weight="700">Replace this image</text>
+    <text x="800" y="804" text-anchor="middle" font-size="18" opacity="0.72">Put your medical device photo here (SVG placeholder)</text>
+  </g>
+</svg>
